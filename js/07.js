@@ -3,13 +3,9 @@ function distance(a,b,c,d){
     return 0;
   }
 
-  else if(a==0 && b==0 && c==0 && d==0) {
-    return undifine;
-  }
-  else {
-    var x=  a-b;
-    var y = c-d;
-    var inroot = (x*x) + (y*y);
-    return Math.sqrt(inroot);
+  else if(a!=c!=0 && b!=d!=0) {
+    var x= Math.abs(c-a);
+    var y= Math.abs(d-b);
+    return Math.sqrt(x*x + y*y);
   }
 }
